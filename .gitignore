@@ -52,3 +52,4 @@ Exercises/Exercise01/C/DeviceInfo.dSYM/Contents/Resources/DWARF/DeviceInfo
 Solutions/Exercise06/Cpp/Makefile.tmp
 
 Solutions/ExerciseA/C/pi_vocl.dSYM/Contents/Resources/DWARF/pi_vocl
+*.user

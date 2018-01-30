@@ -10,7 +10,12 @@
 
 #define __CL_ENABLE_EXCEPTIONS
 
+#ifdef CC_CUSTOMIZED
+#include "CL/cl.hpp"
+#else
 #include "cl.hpp"
+#endif
+
 #include <iostream>
 #include <vector>
 
