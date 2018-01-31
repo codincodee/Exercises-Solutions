@@ -23,9 +23,16 @@
 
 #include "matmul.hpp"
 #include "matrix_lib.hpp"
+
+#ifdef CC_CUSTOMIZED
+#include <Cpp_common/util.hpp>
+#include <Cpp_common/err_code.h>
+#include <Cpp_common/device_picker.hpp>
+#else
 #include "util.hpp"
 #include <err_code.h>
 #include "device_picker.hpp"
+#endif
 
 std::string kernelsource = "__kernel void mmul(                                                    \n" \
 "   const int N,                                                        \n" \

@@ -20,7 +20,12 @@
 #include <vector>
 
 #define __CL_ENABLE_EXCEPTIONS
+
+#ifdef CC_CUSTOMIZED
+#include <cl/cl.hpp>
+#else
 #include "cl.hpp"
+#endif
 
 
 #include "matrix_lib.hpp"

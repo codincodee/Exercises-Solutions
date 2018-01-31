@@ -19,7 +19,11 @@
 #include <iostream>
 #include <vector>
 
+#ifdef CC_CUSTOMIZED
+#include <C_common/err_code.h>
+#else
 #include <err_code.h>
+#endif
 
 int main(void)
 {

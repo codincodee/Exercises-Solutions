@@ -15,11 +15,17 @@
 
 #define __CL_ENABLE_EXCEPTIONS
 
+#ifdef CC_CUSTOMIZED
+#include <cl/cl.hpp>
+#include <Cpp_common/util.hpp>
+#include <Cpp_common/err_code.h>
+#else
 #include "cl.hpp"
 
 #include "util.hpp" // utility library
 
 #include "err_code.h"
+#endif
 
 #include <vector>
 #include <cstdio>
